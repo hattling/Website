@@ -1,0 +1,22 @@
+<div class="site-shell">
+  <header class="topbar section">
+    <div class="container topbar__inner">
+      <a class="brand" routerLink="/">
+        <span class="brand__mark"></span>
+        <div>
+          <p class="brand__name">Apex Industrial Coatings</p>
+          <p class="brand__meta">ENGINEERED SURFACE PERFORMANCE</p>
+        </div>
+      </a>
+      <nav class="topnav">
+        <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a routerLink="/categories" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Categories</a>
+        <a routerLink="/about" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+        <a routerLink="/industries" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Industries</a>
+        <a routerLink="/resources" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Resources</a>
+        <a routerLink="/contact" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <router-outlet></router-outlet>
+</div>

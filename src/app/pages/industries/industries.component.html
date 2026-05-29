@@ -1,0 +1,47 @@
+<main>
+  <section class="hero section">
+    <div class="hero__texture"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">Industries Served</p>
+      <h1>Performance Coating Systems Tailored by Industry</h1>
+      <p class="hero__sub">
+        We develop application-driven coating solutions matched to each sector's environmental stress profile, compliance
+        needs, and operating lifecycle targets.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="industry-grid">
+        <article class="industry-card reveal" *ngFor="let industry of industries">
+          <h2>{{ industry.name }}</h2>
+          <p>{{ industry.description }}</p>
+          <h3>Typical Applications</h3>
+          <ul>
+            <li *ngFor="let app of industry.applications">{{ app }}</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container highlights reveal">
+      <h2>Engineering-Led Support Across Sectors</h2>
+      <p>
+        Our technical team aligns coating selection with substrate, service conditions, and maintenance strategy to
+        maximize reliability and total lifecycle value.
+      </p>
+      <div class="placeholder">Placeholder Box: Add sector certifications, key clients, or project portfolio highlights here.</div>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="container cta__inner reveal">
+      <h2>Need a Sector-Specific Coating Recommendation?</h2>
+      <p>Tell us your operating environment and we will propose a high-performance system fit.</p>
+      <a class="btn btn--primary" routerLink="/contact">Request a Quote</a>
+    </div>
+  </section>
+</main>

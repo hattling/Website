@@ -1,0 +1,80 @@
+<main>
+  <section class="hero section">
+    <div class="hero__texture" [style.transform]="'translate3d(0, ' + parallaxOffset + 'px, 0) scale(1.1)'"></div>
+    <div class="hero__glow hero__glow--one" [style.transform]="'translate3d(0, ' + parallaxGlowOffset + 'px, 0)'"></div>
+    <div class="hero__glow hero__glow--two" [style.transform]="'translate3d(0, -' + parallaxGlowOffset * 0.55 + 'px, 0)'"></div>
+    <div class="container hero__content reveal" [style.transform]="'translate3d(0, -' + parallaxContentOffset + 'px, 0)'">
+      <p class="eyebrow">Industrial Coatings Manufacturer</p>
+      <h1>Built for Performance. Engineered for Protection.</h1>
+      <p class="hero__sub">
+        We design high-performance paint and protective systems for critical assets where durability, precision, and
+        reliability are non-negotiable.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" routerLink="/contact">Get a Quote</a>
+        <a class="btn btn--secondary" routerLink="/categories">View Products</a>
+      </div>
+      <div class="hero__placeholder">
+        <p>Placeholder Text Box</p>
+        <small>Add a short value proposition or campaign message here.</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Product Categories</p>
+        <h2>Coating Systems Built for Specific Performance Demands</h2>
+      </div>
+      <div class="category-grid">
+        <article class="category-card reveal" *ngFor="let category of categories">
+          <div class="category-card__image" [style.background-image]="'url(' + category.image + ')'"></div>
+          <div class="category-card__overlay">
+            <h3>{{ category.title }}</h3>
+            <p>{{ category.description }}</p>
+            <a [routerLink]="['/categories', category.slug]">View Category</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Key Benefits</p>
+        <h2>Performance You Can Specify with Confidence</h2>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit-card reveal" *ngFor="let benefit of benefits">
+          <h3>{{ benefit.title }}</h3>
+          <p>{{ benefit.detail }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Industries Served</p>
+        <h2>Solutions Tuned to Real-World Industrial Conditions</h2>
+      </div>
+      <div class="industry-grid">
+        <article class="industry-item reveal" *ngFor="let industry of industries">
+          <h3>{{ industry.name }}</h3>
+          <p>{{ industry.summary }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="container cta__inner reveal">
+      <h2>Let's Build a Solution Together</h2>
+      <p>Share your requirement and our technical team will recommend the right system.</p>
+      <a class="btn btn--primary" routerLink="/contact">Request a Quote</a>
+    </div>
+  </section>
+</main>

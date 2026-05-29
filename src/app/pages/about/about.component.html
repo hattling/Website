@@ -1,0 +1,72 @@
+<main>
+  <section class="hero section">
+    <div class="hero__texture"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">About Us</p>
+      <h1>Built for Performance. Engineered for Protection.</h1>
+      <p class="hero__sub">
+        We deliver industrial coating systems designed to protect critical assets, extend lifecycle value, and perform
+        under severe operational conditions.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <article class="panel reveal">
+        <h2>Our Story</h2>
+        <ul>
+          <li *ngFor="let point of storyPoints">{{ point }}</li>
+        </ul>
+      </article>
+      <article class="panel reveal">
+        <h2>What We Do</h2>
+        <ul>
+          <li *ngFor="let item of whatWeDo">{{ item }}</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Our Approach</p>
+        <h2>Precision, Testing, and Industrial Discipline</h2>
+      </div>
+      <div class="approach-grid">
+        <article class="approach-card reveal" *ngFor="let item of approach">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.detail }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <article class="panel reveal">
+        <h2>Why Choose Us</h2>
+        <ul>
+          <li *ngFor="let reason of reasons">{{ reason }}</li>
+        </ul>
+      </article>
+      <article class="panel reveal">
+        <h2>Mission and Commitment</h2>
+        <p>
+          Our mission is to deliver measurable industrial value through high-performance coating technology, constant
+          process innovation, and dependable customer partnership.
+        </p>
+        <p class="placeholder">Placeholder Text Box: Add your founder message, timeline milestones, or plant capacity highlights.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="container cta__inner reveal">
+      <h2>Ready to Build a High-Performance Coating Strategy?</h2>
+      <p>Connect with our team to discuss your environment, constraints, and performance targets.</p>
+      <a class="btn btn--primary" routerLink="/contact">Request a Quote</a>
+    </div>
+  </section>
+</main>

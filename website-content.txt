@@ -1,0 +1,2027 @@
+================================================================================
+WEBSITE CONTENT INVENTORY
+Apex Industrial Coatings
+================================================================================
+Instructions:
+- Each field shows the CURRENT text live on the site today.
+- Write your new copy under UPDATED (replace "updated content goes here").
+- After editing, update the matching source files and redeploy to Vercel.
+
+Source file guide:
+  Header ............... src/app/app.component.html
+  Home ................. src/app/pages/home/home.component.html + .ts
+  About ................ src/app/pages/about/about.component.html + .ts
+  Contact .............. src/app/pages/contact/contact.component.html
+  Categories list ...... src/app/pages/product-categories/ + src/app/data/categories.data.ts
+  Category detail ...... src/app/pages/category-detail/ + categories.data.ts (per slug)
+  Products ............. src/app/data/products.data.ts
+  Product detail ....... src/app/pages/product-detail/ + products.data.ts (per slug)
+  Industries ........... src/app/pages/industries/industries.component.html + .ts
+  Resources ............ src/app/pages/resources/resources.component.html + .ts
+  Browser tab title .... src/index.html
+
+================================================================================
+GLOBAL
+================================================================================
+
+Page: Site (all pages)
+  Subpage: Browser Tab
+    Field: Page Title
+      CURRENT: Dadswebsite
+      UPDATED:
+      updated content goes here
+
+
+Page: Header (all pages)
+  Subpage: Brand
+    Field: Company Name
+      CURRENT: Apex Industrial Coatings
+      UPDATED:
+      updated content goes here
+
+    Field: Tagline
+      CURRENT: ENGINEERED SURFACE PERFORMANCE
+      UPDATED:
+      updated content goes here
+
+  Subpage: Navigation
+    Field: Link - Home
+      CURRENT: Home
+      UPDATED:
+      updated content goes here
+
+    Field: Link - Categories
+      CURRENT: Categories
+      UPDATED:
+      updated content goes here
+
+    Field: Link - About
+      CURRENT: About
+      UPDATED:
+      updated content goes here
+
+    Field: Link - Industries
+      CURRENT: Industries
+      UPDATED:
+      updated content goes here
+
+    Field: Link - Resources
+      CURRENT: Resources
+      UPDATED:
+      updated content goes here
+
+    Field: Link - Contact
+      CURRENT: Contact
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+HOME PAGE (/)
+================================================================================
+
+Page: Home
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: Industrial Coatings Manufacturer
+      UPDATED:
+      updated content goes here
+
+    Field: Headline
+      CURRENT: Built for Performance. Engineered for Protection.
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: We design high-performance paint and protective systems for critical assets where durability, precision, and reliability are non-negotiable.
+      UPDATED:
+      updated content goes here
+
+    Field: Button - Primary
+      CURRENT: Get a Quote
+      UPDATED:
+      updated content goes here
+
+    Field: Button - Secondary
+      CURRENT: View Products
+      UPDATED:
+      updated content goes here
+
+    Field: Placeholder Box - Title
+      CURRENT: Placeholder Text Box
+      UPDATED:
+      updated content goes here
+
+    Field: Placeholder Box - Subtitle
+      CURRENT: Add a short value proposition or campaign message here.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Product Categories Preview
+    Field: Section Eyebrow
+      CURRENT: Product Categories
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Coating Systems Built for Specific Performance Demands
+      UPDATED:
+      updated content goes here
+
+    Field: Card Link Text
+      CURRENT: View Category
+      UPDATED:
+      updated content goes here
+
+    Note: Home shows the first 4 categories from categories.data.ts. See CATEGORIES section below for their text.
+
+  Subpage: Key Benefits
+    Field: Section Eyebrow
+      CURRENT: Key Benefits
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Performance You Can Specify with Confidence
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 1 - Title
+      CURRENT: Extreme Durability
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 1 - Detail
+      CURRENT: Built to withstand abrasion, impact, and prolonged mechanical stress.
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 2 - Title
+      CURRENT: Chemical Resistance
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 2 - Detail
+      CURRENT: Formulations designed to perform in aggressive chemical environments.
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 3 - Title
+      CURRENT: Precision Formulation
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 3 - Detail
+      CURRENT: Engineered batch consistency with strict tolerance and quality control.
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 4 - Title
+      CURRENT: Custom Performance
+      UPDATED:
+      updated content goes here
+
+    Field: Benefit 4 - Detail
+      CURRENT: Tailored coating systems aligned to substrate, climate, and lifecycle goals.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Industries Served Preview
+    Field: Section Eyebrow
+      CURRENT: Industries Served
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Solutions Tuned to Real-World Industrial Conditions
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 1 - Name
+      CURRENT: Automotive
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 1 - Summary
+      CURRENT: High-performance protective layers for components and structural assemblies.
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 2 - Name
+      CURRENT: Marine
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 2 - Summary
+      CURRENT: Corrosion defense for hulls, offshore platforms, and salt-exposed assets.
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 3 - Name
+      CURRENT: Infrastructure
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 3 - Summary
+      CURRENT: Long-life coatings for bridges, pipelines, and civil structures.
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 4 - Name
+      CURRENT: Manufacturing
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 4 - Summary
+      CURRENT: Reliable surface systems for heavy equipment and production lines.
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 5 - Name
+      CURRENT: Energy
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 5 - Summary
+      CURRENT: Protective chemistry for power plants, storage terminals, and field assets.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Call to Action
+    Field: Title
+      CURRENT: Let's Build a Solution Together
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Share your requirement and our technical team will recommend the right system.
+      UPDATED:
+      updated content goes here
+
+    Field: Button
+      CURRENT: Request a Quote
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+ABOUT PAGE (/about)
+================================================================================
+
+Page: About
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: About Us
+      UPDATED:
+      updated content goes here
+
+    Field: Headline
+      CURRENT: Built for Performance. Engineered for Protection.
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: We deliver industrial coating systems designed to protect critical assets, extend lifecycle value, and perform under severe operational conditions.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Our Story
+    Field: Section Title
+      CURRENT: Our Story
+      UPDATED:
+      updated content goes here
+
+    Field: Bullet 1
+      CURRENT: Founded to solve high-failure coating environments with engineering-first formulation.
+      UPDATED:
+      updated content goes here
+
+    Field: Bullet 2
+      CURRENT: Scaled from custom industrial batches to multi-sector production systems.
+      UPDATED:
+      updated content goes here
+
+    Field: Bullet 3
+      CURRENT: Built around repeatability, process discipline, and long-term client performance.
+      UPDATED:
+      updated content goes here
+
+  Subpage: What We Do
+    Field: Section Title
+      CURRENT: What We Do
+      UPDATED:
+      updated content goes here
+
+    Field: Item 1
+      CURRENT: Protective and anti-corrosion systems
+      UPDATED:
+      updated content goes here
+
+    Field: Item 2
+      CURRENT: Industrial primers and specialty finishes
+      UPDATED:
+      updated content goes here
+
+    Field: Item 3
+      CURRENT: Heat-resistant and process-specific coatings
+      UPDATED:
+      updated content goes here
+
+    Field: Item 4
+      CURRENT: Custom formulation for unique operating environments
+      UPDATED:
+      updated content goes here
+
+  Subpage: Our Approach
+    Field: Section Eyebrow
+      CURRENT: Our Approach
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Precision, Testing, and Industrial Discipline
+      UPDATED:
+      updated content goes here
+
+    Field: Card 1 - Title
+      CURRENT: Precision Formulation
+      UPDATED:
+      updated content goes here
+
+    Field: Card 1 - Detail
+      CURRENT: Controlled chemistry and tight batch consistency across production cycles.
+      UPDATED:
+      updated content goes here
+
+    Field: Card 2 - Title
+      CURRENT: Testing and Validation
+      UPDATED:
+      updated content goes here
+
+    Field: Card 2 - Detail
+      CURRENT: Performance is verified under chemical, thermal, and mechanical stress scenarios.
+      UPDATED:
+      updated content goes here
+
+    Field: Card 3 - Title
+      CURRENT: Quality Control
+      UPDATED:
+      updated content goes here
+
+    Field: Card 3 - Detail
+      CURRENT: Process checkpoints ensure substrate compatibility, curing accuracy, and field reliability.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Why Choose Us
+    Field: Section Title
+      CURRENT: Why Choose Us
+      UPDATED:
+      updated content goes here
+
+    Field: Reason 1
+      CURRENT: Reliable performance in demanding environments
+      UPDATED:
+      updated content goes here
+
+    Field: Reason 2
+      CURRENT: Consistent quality across projects and production scale
+      UPDATED:
+      updated content goes here
+
+    Field: Reason 3
+      CURRENT: Flexible customization for unique industrial requirements
+      UPDATED:
+      updated content goes here
+
+    Field: Reason 4
+      CURRENT: Technical support from specification through application
+      UPDATED:
+      updated content goes here
+
+  Subpage: Mission and Commitment
+    Field: Section Title
+      CURRENT: Mission and Commitment
+      UPDATED:
+      updated content goes here
+
+    Field: Mission Paragraph
+      CURRENT: Our mission is to deliver measurable industrial value through high-performance coating technology, constant process innovation, and dependable customer partnership.
+      UPDATED:
+      updated content goes here
+
+    Field: Placeholder Text
+      CURRENT: Placeholder Text Box: Add your founder message, timeline milestones, or plant capacity highlights.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Call to Action
+    Field: Title
+      CURRENT: Ready to Build a High-Performance Coating Strategy?
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Connect with our team to discuss your environment, constraints, and performance targets.
+      UPDATED:
+      updated content goes here
+
+    Field: Button
+      CURRENT: Request a Quote
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+CONTACT PAGE (/contact)
+================================================================================
+
+Page: Contact
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: Contact / Get a Quote
+      UPDATED:
+      updated content goes here
+
+    Field: Headline
+      CURRENT: Let's Build a Solution Together
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Share your coating requirement and our technical team will recommend a high-performance system aligned with your operating conditions.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Quote Form
+    Field: Section Title
+      CURRENT: Get a Quote
+      UPDATED:
+      updated content goes here
+
+    Field: Label - Name
+      CURRENT: Name
+      UPDATED:
+      updated content goes here
+
+    Field: Label - Company
+      CURRENT: Company
+      UPDATED:
+      updated content goes here
+
+    Field: Label - Email
+      CURRENT: Email
+      UPDATED:
+      updated content goes here
+
+    Field: Label - Requirement
+      CURRENT: Requirement
+      UPDATED:
+      updated content goes here
+
+    Field: Submit Button
+      CURRENT: Submit Request
+      UPDATED:
+      updated content goes here
+
+  Subpage: Contact Details
+    Field: Section Title
+      CURRENT: Contact Details
+      UPDATED:
+      updated content goes here
+
+    Field: Sales Email
+      CURRENT: sales@apexcoatings.com
+      UPDATED:
+      updated content goes here
+
+    Field: Technical Support Email
+      CURRENT: tech@apexcoatings.com
+      UPDATED:
+      updated content goes here
+
+    Field: Phone
+      CURRENT: +1 (555) 240-1100
+      UPDATED:
+      updated content goes here
+
+    Field: Hours
+      CURRENT: Mon-Fri, 8:00 AM - 6:00 PM
+      UPDATED:
+      updated content goes here
+
+    Field: Location Heading
+      CURRENT: Location
+      UPDATED:
+      updated content goes here
+
+    Field: Map Caption
+      CURRENT: Business Location Pin
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+CATEGORIES PAGE (/categories)
+================================================================================
+
+Page: Categories
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: Product Categories
+      UPDATED:
+      updated content goes here
+
+    Field: Headline
+      CURRENT: Industrial Coating Categories for High-Spec Applications
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Explore engineered categories organized by performance intent, substrate compatibility, and real-world operating conditions.
+      UPDATED:
+      updated content goes here
+
+    Field: Button - Primary
+      CURRENT: Request a Quote
+      UPDATED:
+      updated content goes here
+
+    Field: Button - Secondary
+      CURRENT: Talk to Technical Team
+      UPDATED:
+      updated content goes here
+
+  Subpage: Filters
+    Field: Label - Application
+      CURRENT: Application
+      UPDATED:
+      updated content goes here
+
+    Field: Label - Surface
+      CURRENT: Surface
+      UPDATED:
+      updated content goes here
+
+    Field: Label - Industry
+      CURRENT: Industry
+      UPDATED:
+      updated content goes here
+
+    Field: Label - Sort
+      CURRENT: Sort
+      UPDATED:
+      updated content goes here
+
+    Field: Reset Button
+      CURRENT: Reset
+      UPDATED:
+      updated content goes here
+
+    Field: Filter Option - All
+      CURRENT: All
+      UPDATED:
+      updated content goes here
+
+  Subpage: Category Grid
+    Field: Section Eyebrow
+      CURRENT: Available Systems
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Professionally Structured for Fast Selection
+      UPDATED:
+      updated content goes here
+
+    Field: Result Count (dynamic suffix)
+      CURRENT: categories shown
+      UPDATED:
+      updated content goes here
+
+    Field: Card Link Text
+      CURRENT: View Category
+      UPDATED:
+      updated content goes here
+
+  Subpage: Trusted Metrics
+    Field: Metric 1 - Label
+      CURRENT: Validated Systems
+      UPDATED:
+      updated content goes here
+
+    Field: Metric 1 - Value
+      CURRENT: 120+
+      UPDATED:
+      updated content goes here
+
+    Field: Metric 2 - Label
+      CURRENT: Industrial Clients
+      UPDATED:
+      updated content goes here
+
+    Field: Metric 2 - Value
+      CURRENT: 300+
+      UPDATED:
+      updated content goes here
+
+    Field: Metric 3 - Label
+      CURRENT: Average Lifecycle Gain
+      UPDATED:
+      updated content goes here
+
+    Field: Metric 3 - Value
+      CURRENT: 28%
+      UPDATED:
+      updated content goes here
+
+  Subpage: Call to Action
+    Field: Title
+      CURRENT: Need Help Selecting the Right Category?
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Our technical team can map your operating environment to the most effective coating family.
+      UPDATED:
+      updated content goes here
+
+    Field: Button
+      CURRENT: Request a Quote
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+CATEGORY DETAIL PAGES (/categories/:slug)
+================================================================================
+
+Page: Category Detail (shared labels on every category page)
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: Category Detail
+      UPDATED:
+      updated content goes here
+
+  Subpage: Content Panels
+    Field: Use Cases Title
+      CURRENT: Primary Use Cases
+      UPDATED:
+      updated content goes here
+
+    Field: Highlights Title
+      CURRENT: Technical Highlights
+      UPDATED:
+      updated content goes here
+
+    Field: Image Caption
+      CURRENT: Image Slot: Replace with final product/category photography.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Products in Category
+    Field: Section Eyebrow
+      CURRENT: Products in This Category
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Explore Product-Level Options
+      UPDATED:
+      updated content goes here
+
+    Field: Card Link Text
+      CURRENT: View Product
+      UPDATED:
+      updated content goes here
+
+  Subpage: Related Categories
+    Field: Section Eyebrow
+      CURRENT: Related Categories
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Explore Similar Performance Systems
+      UPDATED:
+      updated content goes here
+
+    Field: Card Link Text
+      CURRENT: View Category
+      UPDATED:
+      updated content goes here
+
+  Subpage: Call to Action
+    Field: Title
+      CURRENT: Need Product-Level Recommendations?
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Share your operating conditions and our team will propose the best-fit systems.
+      UPDATED:
+      updated content goes here
+
+    Field: Button
+      CURRENT: Request a Quote
+      UPDATED:
+      updated content goes here
+
+  Subpage: Not Found
+    Field: Title
+      CURRENT: Category Not Found
+      UPDATED:
+      updated content goes here
+
+    Field: Body
+      CURRENT: This category is unavailable. Return to the categories page to continue browsing.
+      UPDATED:
+      updated content goes here
+
+    Field: Link
+      CURRENT: Back to Categories
+      UPDATED:
+      updated content goes here
+
+
+--- CATEGORY: protective-coatings ---
+
+Page: Category Detail
+  Subpage: protective-coatings
+    Field: Title
+      CURRENT: Protective Coatings
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Corrosion-resistant systems for steel, concrete, and high-wear environments.
+      UPDATED:
+      updated content goes here
+
+    Field: Long Description
+      CURRENT: Protective coating systems engineered for severe environments requiring long-term resistance against corrosion, abrasion, and moisture ingress.
+      UPDATED:
+      updated content goes here
+
+    Field: Application Tag
+      CURRENT: Heavy Duty
+      UPDATED:
+      updated content goes here
+
+    Field: Surface Tag
+      CURRENT: Steel
+      UPDATED:
+      updated content goes here
+
+    Field: Industry Tag
+      CURRENT: Infrastructure
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 1
+      CURRENT: Bridges and structural steel
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 2
+      CURRENT: Pipelines and storage vessels
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 3
+      CURRENT: Heavy equipment frames
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 1
+      CURRENT: High film build tolerance
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 2
+      CURRENT: Excellent adhesion profile
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 3
+      CURRENT: Extended maintenance cycle
+      UPDATED:
+      updated content goes here
+
+
+--- CATEGORY: industrial-primers ---
+
+Page: Category Detail
+  Subpage: industrial-primers
+    Field: Title
+      CURRENT: Industrial Primers
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: High-adhesion primers engineered for durability and substrate compatibility.
+      UPDATED:
+      updated content goes here
+
+    Field: Long Description
+      CURRENT: Industrial primers designed to optimize topcoat performance while ensuring reliable bonding across varied substrate conditions.
+      UPDATED:
+      updated content goes here
+
+    Field: Application Tag
+      CURRENT: External
+      UPDATED:
+      updated content goes here
+
+    Field: Surface Tag
+      CURRENT: Mixed
+      UPDATED:
+      updated content goes here
+
+    Field: Industry Tag
+      CURRENT: Manufacturing
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 1
+      CURRENT: Fabricated metal parts
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 2
+      CURRENT: Production line components
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 3
+      CURRENT: Heavy machinery housings
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 1
+      CURRENT: Fast recoat windows
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 2
+      CURRENT: Improved substrate wetting
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 3
+      CURRENT: Reliable cross-system compatibility
+      UPDATED:
+      updated content goes here
+
+
+--- CATEGORY: specialty-finishes ---
+
+Page: Category Detail
+  Subpage: specialty-finishes
+    Field: Title
+      CURRENT: Specialty Finishes
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Performance finishes balancing visual precision with environmental resistance.
+      UPDATED:
+      updated content goes here
+
+    Field: Long Description
+      CURRENT: Specialty finish systems combining premium appearance with engineered resistance to UV, chemicals, and process wear.
+      UPDATED:
+      updated content goes here
+
+    Field: Application Tag
+      CURRENT: Internal
+      UPDATED:
+      updated content goes here
+
+    Field: Surface Tag
+      CURRENT: Aluminum
+      UPDATED:
+      updated content goes here
+
+    Field: Industry Tag
+      CURRENT: Automotive
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 1
+      CURRENT: Automotive trim and structures
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 2
+      CURRENT: Precision fabricated assemblies
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 3
+      CURRENT: Architectural metal elements
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 1
+      CURRENT: Color consistency controls
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 2
+      CURRENT: UV and gloss retention
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 3
+      CURRENT: Fine texture management
+      UPDATED:
+      updated content goes here
+
+
+--- CATEGORY: powder-coatings ---
+
+Page: Category Detail
+  Subpage: powder-coatings
+    Field: Title
+      CURRENT: Powder Coatings
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Efficient, low-emission coating systems with consistent film build and protection.
+      UPDATED:
+      updated content goes here
+
+    Field: Long Description
+      CURRENT: High-efficiency powder coating families that deliver environmental compliance, process consistency, and long-term protection.
+      UPDATED:
+      updated content goes here
+
+    Field: Application Tag
+      CURRENT: External
+      UPDATED:
+      updated content goes here
+
+    Field: Surface Tag
+      CURRENT: Steel
+      UPDATED:
+      updated content goes here
+
+    Field: Industry Tag
+      CURRENT: Energy
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 1
+      CURRENT: Equipment enclosures
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 2
+      CURRENT: Racking and support structures
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 3
+      CURRENT: Industrial hardware
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 1
+      CURRENT: Low VOC profile
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 2
+      CURRENT: Uniform coverage
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 3
+      CURRENT: Production-friendly cure options
+      UPDATED:
+      updated content goes here
+
+
+--- CATEGORY: anti-corrosion-systems ---
+
+Page: Category Detail
+  Subpage: anti-corrosion-systems
+    Field: Title
+      CURRENT: Anti-Corrosion Systems
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Multi-layer protection designed for marine and high-humidity installations.
+      UPDATED:
+      updated content goes here
+
+    Field: Long Description
+      CURRENT: Layered anti-corrosion solutions built for chloride-rich, wet, and cyclic weather conditions requiring dependable barrier performance.
+      UPDATED:
+      updated content goes here
+
+    Field: Application Tag
+      CURRENT: Heavy Duty
+      UPDATED:
+      updated content goes here
+
+    Field: Surface Tag
+      CURRENT: Steel
+      UPDATED:
+      updated content goes here
+
+    Field: Industry Tag
+      CURRENT: Marine
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 1
+      CURRENT: Marine hull and deck structures
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 2
+      CURRENT: Offshore support assets
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 3
+      CURRENT: Coastal industrial plants
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 1
+      CURRENT: Salt spray endurance
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 2
+      CURRENT: Cathodic support options
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 3
+      CURRENT: High humidity stability
+      UPDATED:
+      updated content goes here
+
+
+--- CATEGORY: heat-resistant-coatings ---
+
+Page: Category Detail
+  Subpage: heat-resistant-coatings
+    Field: Title
+      CURRENT: Heat-Resistant Coatings
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Thermal-stable formulations for process lines and elevated temperature zones.
+      UPDATED:
+      updated content goes here
+
+    Field: Long Description
+      CURRENT: Thermal-resistant systems engineered to maintain coating integrity, color, and protection under elevated process temperatures.
+      UPDATED:
+      updated content goes here
+
+    Field: Application Tag
+      CURRENT: Heavy Duty
+      UPDATED:
+      updated content goes here
+
+    Field: Surface Tag
+      CURRENT: Mixed
+      UPDATED:
+      updated content goes here
+
+    Field: Industry Tag
+      CURRENT: Energy
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 1
+      CURRENT: Exhaust and heat exchanger surfaces
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 2
+      CURRENT: Process piping
+      UPDATED:
+      updated content goes here
+
+    Field: Use Case 3
+      CURRENT: Power generation equipment
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 1
+      CURRENT: High-temperature retention
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 2
+      CURRENT: Thermal cycling resistance
+      UPDATED:
+      updated content goes here
+
+    Field: Highlight 3
+      CURRENT: Reduced coating breakdown
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+PRODUCT DETAIL PAGES (/products/:slug)
+================================================================================
+
+Page: Product Detail (shared labels on every product page)
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: Product Detail
+      UPDATED:
+      updated content goes here
+
+    Field: Button - Primary
+      CURRENT: Request Quote
+      UPDATED:
+      updated content goes here
+
+    Field: Button - Secondary
+      CURRENT: Contact Sales
+      UPDATED:
+      updated content goes here
+
+  Subpage: Content Panels
+    Field: Image Caption
+      CURRENT: Image Slot: Replace with final product or application photography.
+      UPDATED:
+      updated content goes here
+
+    Field: Features Section Title
+      CURRENT: Features and Benefits
+      UPDATED:
+      updated content goes here
+
+    Field: Specifications Section Title
+      CURRENT: Technical Specifications
+      UPDATED:
+      updated content goes here
+
+  Subpage: Applications and Industries
+    Field: Applications Title
+      CURRENT: Applications
+      UPDATED:
+      updated content goes here
+
+    Field: Industries Title
+      CURRENT: Industries
+      UPDATED:
+      updated content goes here
+
+  Subpage: Documentation
+    Field: Section Title
+      CURRENT: Documentation
+      UPDATED:
+      updated content goes here
+
+    Field: PDF Note
+      CURRENT: Replace this placeholder with your actual downloadable PDF link.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Related Products
+    Field: Section Eyebrow
+      CURRENT: Related Products
+      UPDATED:
+      updated content goes here
+
+    Field: Section Title
+      CURRENT: Recommended Alternatives in This Category
+      UPDATED:
+      updated content goes here
+
+    Field: Card Link Text
+      CURRENT: View Product
+      UPDATED:
+      updated content goes here
+
+  Subpage: Not Found
+    Field: Title
+      CURRENT: Product Not Found
+      UPDATED:
+      updated content goes here
+
+    Field: Body
+      CURRENT: This product is unavailable. Return to categories to continue browsing.
+      UPDATED:
+      updated content goes here
+
+    Field: Link
+      CURRENT: Back to Categories
+      UPDATED:
+      updated content goes here
+
+
+--- PRODUCT: px-900-epoxy-barrier ---
+
+Page: Product Detail
+  Subpage: px-900-epoxy-barrier
+    Field: Name
+      CURRENT: PX-900 Epoxy Barrier
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Two-component epoxy barrier system for aggressive corrosion zones.
+      UPDATED:
+      updated content goes here
+
+    Field: Overview
+      CURRENT: PX-900 delivers high-build corrosion protection for steel and prepared concrete in severe industrial service environments.
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 1
+      CURRENT: High film build with excellent edge retention
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 2
+      CURRENT: Strong adhesion to blasted steel and primed substrates
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 3
+      CURRENT: Chemical and moisture resistance for long service intervals
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (label)
+      CURRENT: Finish
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (value)
+      CURRENT: Semi-Gloss
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (label)
+      CURRENT: Volume Solids
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (value)
+      CURRENT: 78% +/- 2%
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (label)
+      CURRENT: Dry Film Thickness
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (value)
+      CURRENT: 125-250 microns per coat
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (label)
+      CURRENT: Touch Dry
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (value)
+      CURRENT: 2-3 hours at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (label)
+      CURRENT: Recoat Window
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (value)
+      CURRENT: 8-48 hours at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Structural steel
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Storage tanks
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Pipeline exteriors
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 1
+      CURRENT: Infrastructure
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 2
+      CURRENT: Energy
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 3
+      CURRENT: Manufacturing
+      UPDATED:
+      updated content goes here
+
+    Field: Datasheet Link Label
+      CURRENT: PX-900 Technical Datasheet (PDF)
+      UPDATED:
+      updated content goes here
+
+
+--- PRODUCT: mp-420-zinc-primer ---
+
+Page: Product Detail
+  Subpage: mp-420-zinc-primer
+    Field: Name
+      CURRENT: MP-420 Zinc Primer
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Zinc-rich primer providing enhanced cathodic protection.
+      UPDATED:
+      updated content goes here
+
+    Field: Overview
+      CURRENT: MP-420 is engineered for high-corrosion industrial assets requiring robust substrate protection and strong topcoat compatibility.
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 1
+      CURRENT: Excellent anti-corrosion properties in marine and industrial atmospheres
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 2
+      CURRENT: Fast handling and recoat cycles for production efficiency
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 3
+      CURRENT: Compatible with epoxy and polyurethane topcoat systems
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (label)
+      CURRENT: Finish
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (value)
+      CURRENT: Matte Gray
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (label)
+      CURRENT: Volume Solids
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (value)
+      CURRENT: 62% +/- 2%
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (label)
+      CURRENT: Dry Film Thickness
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (value)
+      CURRENT: 60-100 microns per coat
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (label)
+      CURRENT: Touch Dry
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (value)
+      CURRENT: 30-45 minutes at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (label)
+      CURRENT: Recoat Window
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (value)
+      CURRENT: 2-24 hours at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Steel fabrication
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Heavy machinery
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Marine support structures
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 1
+      CURRENT: Manufacturing
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 2
+      CURRENT: Marine
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 3
+      CURRENT: Infrastructure
+      UPDATED:
+      updated content goes here
+
+    Field: Datasheet Link Label
+      CURRENT: MP-420 Technical Datasheet (PDF)
+      UPDATED:
+      updated content goes here
+
+
+--- PRODUCT: sf-680-ceramic-finish ---
+
+Page: Product Detail
+  Subpage: sf-680-ceramic-finish
+    Field: Name
+      CURRENT: SF-680 Ceramic Finish
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: High-performance specialty finish for thermal and chemical stress.
+      UPDATED:
+      updated content goes here
+
+    Field: Overview
+      CURRENT: SF-680 combines aesthetic precision with engineered resistance where both appearance and long-term durability are critical.
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 1
+      CURRENT: Superior color and gloss retention
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 2
+      CURRENT: Enhanced resistance to process chemicals and UV exposure
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 3
+      CURRENT: Fine-finish application with stable texture control
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (label)
+      CURRENT: Finish
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (value)
+      CURRENT: High Gloss / Custom Sheen
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (label)
+      CURRENT: Volume Solids
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (value)
+      CURRENT: 56% +/- 2%
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (label)
+      CURRENT: Dry Film Thickness
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (value)
+      CURRENT: 40-70 microns per coat
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (label)
+      CURRENT: Touch Dry
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (value)
+      CURRENT: 20-30 minutes at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (label)
+      CURRENT: Recoat Window
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (value)
+      CURRENT: 1-12 hours at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Automotive components
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Precision equipment housings
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Architectural metal
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 1
+      CURRENT: Automotive
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 2
+      CURRENT: Manufacturing
+      UPDATED:
+      updated content goes here
+
+    Field: Datasheet Link Label
+      CURRENT: SF-680 Technical Datasheet (PDF)
+      UPDATED:
+      updated content goes here
+
+
+--- PRODUCT: hr-510-thermal-shield ---
+
+Page: Product Detail
+  Subpage: hr-510-thermal-shield
+    Field: Name
+      CURRENT: HR-510 Thermal Shield
+      UPDATED:
+      updated content goes here
+
+    Field: Short Description
+      CURRENT: Thermal-resistant coating designed for elevated temperature equipment.
+      UPDATED:
+      updated content goes here
+
+    Field: Overview
+      CURRENT: HR-510 protects process assets exposed to repeated heat cycling while maintaining film integrity and adhesion performance.
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 1
+      CURRENT: Temperature resistance up to 510C intermittent service
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 2
+      CURRENT: Stable adhesion under thermal cycling conditions
+      UPDATED:
+      updated content goes here
+
+    Field: Feature 3
+      CURRENT: Reduced degradation in high-heat industrial zones
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (label)
+      CURRENT: Finish
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Finish (value)
+      CURRENT: Low Sheen
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (label)
+      CURRENT: Volume Solids
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Volume Solids (value)
+      CURRENT: 48% +/- 2%
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (label)
+      CURRENT: Dry Film Thickness
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Dry Film Thickness (value)
+      CURRENT: 35-60 microns per coat
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (label)
+      CURRENT: Touch Dry
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Touch Dry (value)
+      CURRENT: 15-25 minutes at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (label)
+      CURRENT: Recoat Window
+      UPDATED:
+      updated content goes here
+
+    Field: Spec - Recoat Window (value)
+      CURRENT: 1-8 hours at 25C
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Process lines
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Exhaust ducts
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Heat exchangers
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 1
+      CURRENT: Energy
+      UPDATED:
+      updated content goes here
+
+    Field: Industry 2
+      CURRENT: Manufacturing
+      UPDATED:
+      updated content goes here
+
+    Field: Datasheet Link Label
+      CURRENT: HR-510 Technical Datasheet (PDF)
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+INDUSTRIES PAGE (/industries)
+================================================================================
+
+Page: Industries
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: Industries Served
+      UPDATED:
+      updated content goes here
+
+    Field: Headline
+      CURRENT: Performance Coating Systems Tailored by Industry
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: We develop application-driven coating solutions matched to each sector's environmental stress profile, compliance needs, and operating lifecycle targets.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Automotive
+    Field: Name
+      CURRENT: Automotive
+      UPDATED:
+      updated content goes here
+
+    Field: Description
+      CURRENT: Coating systems for automotive structures and components requiring aesthetic precision, abrasion resistance, and long-term corrosion control.
+      UPDATED:
+      updated content goes here
+
+    Field: Applications Heading
+      CURRENT: Typical Applications
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Chassis assemblies
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Subframes and brackets
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Underbody protection
+      UPDATED:
+      updated content goes here
+
+  Subpage: Marine
+    Field: Name
+      CURRENT: Marine
+      UPDATED:
+      updated content goes here
+
+    Field: Description
+      CURRENT: High-durability coatings engineered for salt-rich, high-humidity environments where corrosion defense and lifecycle extension are critical.
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Hull and deck structures
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Offshore support equipment
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Port-side infrastructure
+      UPDATED:
+      updated content goes here
+
+  Subpage: Infrastructure
+    Field: Name
+      CURRENT: Infrastructure
+      UPDATED:
+      updated content goes here
+
+    Field: Description
+      CURRENT: Long-life protective systems for bridges, pipelines, and public assets exposed to weathering, pollutants, and high service demands.
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Bridge steel members
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Civil steel fabrication
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Utility and transport structures
+      UPDATED:
+      updated content goes here
+
+  Subpage: Manufacturing
+    Field: Name
+      CURRENT: Manufacturing
+      UPDATED:
+      updated content goes here
+
+    Field: Description
+      CURRENT: Process-compatible coatings that support production reliability, equipment longevity, and maintenance interval optimization.
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Process machinery frames
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Factory enclosures
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Handling and material systems
+      UPDATED:
+      updated content goes here
+
+  Subpage: Energy
+    Field: Name
+      CURRENT: Energy
+      UPDATED:
+      updated content goes here
+
+    Field: Description
+      CURRENT: Performance coatings for power and process assets requiring thermal resilience, chemical resistance, and harsh-environment durability.
+      UPDATED:
+      updated content goes here
+
+    Field: Application 1
+      CURRENT: Power generation assets
+      UPDATED:
+      updated content goes here
+
+    Field: Application 2
+      CURRENT: Storage terminals
+      UPDATED:
+      updated content goes here
+
+    Field: Application 3
+      CURRENT: Refining and process lines
+      UPDATED:
+      updated content goes here
+
+  Subpage: Highlights
+    Field: Title
+      CURRENT: Engineering-Led Support Across Sectors
+      UPDATED:
+      updated content goes here
+
+    Field: Body
+      CURRENT: Our technical team aligns coating selection with substrate, service conditions, and maintenance strategy to maximize reliability and total lifecycle value.
+      UPDATED:
+      updated content goes here
+
+    Field: Placeholder
+      CURRENT: Placeholder Box: Add sector certifications, key clients, or project portfolio highlights here.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Call to Action
+    Field: Title
+      CURRENT: Need a Sector-Specific Coating Recommendation?
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Tell us your operating environment and we will propose a high-performance system fit.
+      UPDATED:
+      updated content goes here
+
+    Field: Button
+      CURRENT: Request a Quote
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+RESOURCES PAGE (/resources)
+================================================================================
+
+Page: Resources
+  Subpage: Hero
+    Field: Eyebrow
+      CURRENT: Resources
+      UPDATED:
+      updated content goes here
+
+    Field: Headline
+      CURRENT: Technical Library for Specifications and Field Execution
+      UPDATED:
+      updated content goes here
+
+    Field: Subtitle
+      CURRENT: Access structured coating documentation including datasheets, safety files, application guides, and technical insights for better project outcomes.
+      UPDATED:
+      updated content goes here
+
+  Subpage: Technical Datasheets
+    Field: Group Title
+      CURRENT: Technical Datasheets
+      UPDATED:
+      updated content goes here
+
+    Field: Document 1
+      CURRENT: PX-900 Epoxy Barrier Datasheet
+      UPDATED:
+      updated content goes here
+
+    Field: Document 2
+      CURRENT: MP-420 Zinc Primer Datasheet
+      UPDATED:
+      updated content goes here
+
+    Field: Document 3
+      CURRENT: SF-680 Ceramic Finish Datasheet
+      UPDATED:
+      updated content goes here
+
+    Field: Document 4
+      CURRENT: HR-510 Thermal Shield Datasheet
+      UPDATED:
+      updated content goes here
+
+  Subpage: Safety Documents
+    Field: Group Title
+      CURRENT: Safety Documents
+      UPDATED:
+      updated content goes here
+
+    Field: Document 1
+      CURRENT: General SDS - Protective Systems
+      UPDATED:
+      updated content goes here
+
+    Field: Document 2
+      CURRENT: SDS - Solvent-Based Primers
+      UPDATED:
+      updated content goes here
+
+    Field: Document 3
+      CURRENT: SDS - Specialty Finishes
+      UPDATED:
+      updated content goes here
+
+    Field: Document 4
+      CURRENT: SDS - Heat-Resistant Series
+      UPDATED:
+      updated content goes here
+
+  Subpage: Application Guides
+    Field: Group Title
+      CURRENT: Application Guides
+      UPDATED:
+      updated content goes here
+
+    Field: Document 1
+      CURRENT: Surface Preparation Guide
+      UPDATED:
+      updated content goes here
+
+    Field: Document 2
+      CURRENT: Spray Parameters and Film Build Guide
+      UPDATED:
+      updated content goes here
+
+    Field: Document 3
+      CURRENT: Curing and Recoat Timing Guide
+      UPDATED:
+      updated content goes here
+
+    Field: Document 4
+      CURRENT: Inspection and Quality Control Checklist
+      UPDATED:
+      updated content goes here
+
+  Subpage: Articles and Insights
+    Field: Group Title
+      CURRENT: Articles and Insights
+      UPDATED:
+      updated content goes here
+
+    Field: Document 1
+      CURRENT: Extending Coating Lifecycle in Harsh Environments
+      UPDATED:
+      updated content goes here
+
+    Field: Document 2
+      CURRENT: Choosing the Right Primer-Topcoat Combination
+      UPDATED:
+      updated content goes here
+
+    Field: Document 3
+      CURRENT: Thermal Resistance Selection for Process Equipment
+      UPDATED:
+      updated content goes here
+
+    Field: Document 4
+      CURRENT: Reducing Maintenance Through Better Specification
+      UPDATED:
+      updated content goes here
+
+  Subpage: Documentation Workflow
+    Field: Section Title
+      CURRENT: Documentation Workflow
+      UPDATED:
+      updated content goes here
+
+    Field: Body
+      CURRENT: Placeholder Text Box: Add your internal process for document updates, version control policy, and support contact for technical file requests.
+      UPDATED:
+      updated content goes here
+
+
+================================================================================
+END OF CONTENT INVENTORY
+================================================================================

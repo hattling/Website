@@ -1,0 +1,61 @@
+<main>
+  <section class="hero section">
+    <div class="hero__texture"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">Contact / Get a Quote</p>
+      <h1>Let's Build a Solution Together</h1>
+      <p class="hero__sub">
+        Share your coating requirement and our technical team will recommend a high-performance system aligned with your
+        operating conditions.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <article class="panel reveal">
+        <h2>Get a Quote</h2>
+        <form class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" [(ngModel)]="form.name" />
+          </label>
+          <label>
+            <span>Company</span>
+            <input type="text" name="company" [(ngModel)]="form.company" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" [(ngModel)]="form.email" />
+          </label>
+          <label class="full">
+            <span>Requirement</span>
+            <textarea name="requirement" rows="5" [(ngModel)]="form.requirement"></textarea>
+          </label>
+          <button type="button" class="btn btn--primary">Submit Request</button>
+        </form>
+      </article>
+
+      <article class="panel reveal">
+        <h2>Contact Details</h2>
+        <p><strong>Sales:</strong> sales@apexcoatings.com</p>
+        <p><strong>Technical Support:</strong> tech@apexcoatings.com</p>
+        <p><strong>Phone:</strong> +1 (555) 240-1100</p>
+        <p><strong>Hours:</strong> Mon-Fri, 8:00 AM - 6:00 PM</p>
+
+        <h3>Location</h3>
+        <div class="map-wrap">
+          <iframe
+            class="map-frame"
+            [src]="mapUrl"
+            title="Business location map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-pin"></div>
+        </div>
+        <p class="map-caption">Business Location Pin</p>
+      </article>
+    </div>
+  </section>
+</main>

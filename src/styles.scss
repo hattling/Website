@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, Arial, sans-serif;
+  background: #090909;
+  color: #f3f2ef;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Manrope', 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
