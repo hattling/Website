@@ -2,6 +2,12 @@
 
 :root {
   color-scheme: dark;
+  --color-black: #000000;
+  --color-ink: #010d20;
+  --color-teal: #05695d;
+  --color-mint: #c7ebe3;
+  --color-white: #ffffff;
+  --topbar-height: 76px;
 }
 
 *,
@@ -16,15 +22,56 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--topbar-height);
+  scroll-snap-type: y proximity;
+}
+
 body {
   min-height: 100vh;
   font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, Arial, sans-serif;
-  background: #090909;
-  color: #f3f2ef;
+  background: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
   font-family: 'Manrope', 'IBM Plex Sans', 'Segoe UI', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  background: var(--color-black);
+}
+
+main > section.section {
+  min-height: calc(100svh - var(--topbar-height));
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: clamp(3rem, 6vh, 5rem) 0;
+  scroll-margin-top: var(--topbar-height);
+  scroll-snap-align: start;
+}
+
+main > section.cta.section {
+  min-height: calc((100svh - var(--topbar-height)) / 2);
+}
+
+@media (max-width: 900px) {
+  :root {
+    --topbar-height: 126px;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    scroll-snap-type: none;
+  }
 }

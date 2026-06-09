@@ -22,7 +22,7 @@ export class ContactComponent {
 
   get mapUrl(): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(
-      'https://www.google.com/maps?q=40.7128,-74.0060&z=13&output=embed',
+      'https://www.google.com/maps?q=Actual%20Industrial%20Area%2C%20Uchat%20Rd%2C%20Mangathane%2C%20Maharashtra%20421312%2C%20India&z=15&output=embed',
     );
   }
 }

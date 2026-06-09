@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CATEGORIES } from '../../data/categories.data';
 
@@ -11,10 +11,12 @@ import { CATEGORIES } from '../../data/categories.data';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
+  @ViewChild('heroVideo') private heroVideo?: ElementRef<HTMLVideoElement>;
+
   readonly categories = CATEGORIES.slice(0, 4);
   parallaxOffset = 0;
   parallaxContentOffset = 0;
-  parallaxGlowOffset = 0;
+  showReplayButton = false;
 
   readonly benefits = [
     { title: 'Extreme Durability', detail: 'Built to withstand abrasion, impact, and prolonged mechanical stress.' },
@@ -36,6 +38,18 @@ export class HomeComponent {
     const scrollY = window.scrollY || 0;
     this.parallaxOffset = Math.min(scrollY * 0.28, 180);
     this.parallaxContentOffset = Math.min(scrollY * 0.12, 65);
-    this.parallaxGlowOffset = Math.min(scrollY * 0.4, 240);
+  }
+
+  onHeroVideoEnded(): void {
+    this.showReplayButton = true;
+  }
+
+  replayHeroVideo(): void {
+    const video = this.heroVideo?.nativeElement;
+    if (!video) return;
+
+    video.currentTime = 0;
+    void video.play();
+    this.showReplayButton = false;
   }
 }

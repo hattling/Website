@@ -6,9 +6,9 @@
   padding: 5rem 0;
 }
 .section--muted {
-  background: #121212;
-  border-top: 1px solid #24262b;
-  border-bottom: 1px solid #24262b;
+  background: #010d20;
+  border-top: 1px solid rgba(5, 105, 93, 0.45);
+  border-bottom: 1px solid rgba(5, 105, 93, 0.45);
 }
 .hero {
   position: relative;
@@ -20,7 +20,7 @@
 .hero__texture {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(13, 15, 20, 0.85), rgba(12, 13, 16, 0.95)),
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.82), rgba(1, 13, 32, 0.92)),
     url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1800&q=80');
   background-size: cover;
   background-position: center;
@@ -32,7 +32,7 @@
   max-width: 780px;
 }
 .eyebrow {
-  color: #c7a86a;
+  color: #c7ebe3;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.72rem;
@@ -52,7 +52,7 @@ h2 {
 }
 .hero__sub {
   margin-top: 1.2rem;
-  color: #cbc8bf;
+  color: #c7ebe3;
   max-width: 64ch;
 }
 .split {
@@ -61,9 +61,9 @@ h2 {
   gap: 1rem;
 }
 .panel {
-  background: #191b1f;
-  border: 1px solid #2f3238;
-  border-radius: 0.75rem;
+  background: #010d20;
+  border: 1px solid rgba(5, 105, 93, 0.48);
+  border-radius: 0.5rem;
   padding: 1.2rem;
 }
 .panel ul {
@@ -72,18 +72,21 @@ h2 {
 }
 .panel li {
   margin: 0.45rem 0;
-  color: #cbc8bf;
+  color: #c7ebe3;
 }
 .panel p {
-  color: #cbc8bf;
+  color: #c7ebe3;
   margin: 0.9rem 0 0;
 }
 .placeholder {
-  border: 1px dashed #3a3d44;
+  border: 1px dashed rgba(199, 235, 227, 0.38);
   border-radius: 0.6rem;
   padding: 0.8rem;
-  color: #a9b0bc;
-  background: #15181d;
+  color: #c7ebe3;
+  background: #000000;
+}
+.placeholder.is-hidden {
+  display: none;
 }
 .section-head {
   margin-bottom: 2rem;
@@ -94,26 +97,26 @@ h2 {
   gap: 1rem;
 }
 .approach-card {
-  background: #181b20;
-  border: 1px solid #2f3238;
-  border-radius: 0.75rem;
+  background: #010d20;
+  border: 1px solid rgba(5, 105, 93, 0.48);
+  border-radius: 0.5rem;
   padding: 1.1rem;
 }
 .approach-card p {
-  color: #c8c5bd;
+  color: #c7ebe3;
   margin-top: 0.7rem;
 }
 .cta {
-  background: linear-gradient(110deg, #131313, #1f1f1f);
-  border-top: 1px solid #2f3238;
-  border-bottom: 1px solid #2f3238;
+  background: #010d20;
+  border-top: 1px solid rgba(5, 105, 93, 0.55);
+  border-bottom: 1px solid rgba(5, 105, 93, 0.55);
 }
 .cta__inner {
   text-align: center;
   max-width: 860px;
 }
 .cta__inner p {
-  color: #c6c3ba;
+  color: #c7ebe3;
   margin: 1rem auto 1.6rem;
 }
 .btn {
@@ -130,9 +133,9 @@ h2 {
   transform: translateY(-2px);
 }
 .btn--primary {
-  background: linear-gradient(135deg, #c7a86a, #a8894e);
-  color: #141414;
-  box-shadow: 0 8px 24px rgba(199, 168, 106, 0.3);
+  background: #c7ebe3;
+  color: #010d20;
+  box-shadow: 0 8px 24px rgba(5, 105, 93, 0.3);
 }
 .reveal {
   animation: fadeSlide 850ms ease both;

@@ -1,8 +1,26 @@
 <main>
   <section class="hero section">
-    <div class="hero__texture" [style.transform]="'translate3d(0, ' + parallaxOffset + 'px, 0) scale(1.1)'"></div>
-    <div class="hero__glow hero__glow--one" [style.transform]="'translate3d(0, ' + parallaxGlowOffset + 'px, 0)'"></div>
-    <div class="hero__glow hero__glow--two" [style.transform]="'translate3d(0, -' + parallaxGlowOffset * 0.55 + 'px, 0)'"></div>
+    <video
+      #heroVideo
+      class="hero__video"
+      src="/home page video.mp4"
+      muted
+      playsinline
+      autoplay
+      preload="metadata"
+      (ended)="onHeroVideoEnded()"
+      [style.transform]="'translate3d(0, ' + parallaxOffset + 'px, 0) scale(1.08)'"
+    ></video>
+    <div class="hero__scrim"></div>
+    <button
+      class="hero__replay"
+      *ngIf="showReplayButton"
+      type="button"
+      (click)="replayHeroVideo()"
+      aria-label="Replay home video"
+    >
+      <span></span>
+    </button>
     <div class="container hero__content reveal" [style.transform]="'translate3d(0, -' + parallaxContentOffset + 'px, 0)'">
       <p class="eyebrow">Industrial Coatings Manufacturer</p>
       <h1>Built for Performance. Engineered for Protection.</h1>
@@ -13,10 +31,6 @@
       <div class="hero__actions">
         <a class="btn btn--primary" routerLink="/contact">Get a Quote</a>
         <a class="btn btn--secondary" routerLink="/categories">View Products</a>
-      </div>
-      <div class="hero__placeholder">
-        <p>Placeholder Text Box</p>
-        <small>Add a short value proposition or campaign message here.</small>
       </div>
     </div>
   </section>

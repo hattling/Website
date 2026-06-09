@@ -1,13 +1,11 @@
-import { CommonModule } from '@angular/common';
 import { Component, computed, inject } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { CATEGORIES } from '../../data/categories.data';
 import { PRODUCTS } from '../../data/products.data';
 
 @Component({
   selector: 'app-category-detail',
   standalone: true,
-  imports: [CommonModule, RouterLink],
   templateUrl: './category-detail.component.html',
   styleUrl: './category-detail.component.scss',
 })

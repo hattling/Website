@@ -2,11 +2,8 @@
   <header class="topbar section">
     <div class="container topbar__inner">
       <a class="brand" routerLink="/">
-        <span class="brand__mark"></span>
-        <div>
-          <p class="brand__name">Apex Industrial Coatings</p>
-          <p class="brand__meta">ENGINEERED SURFACE PERFORMANCE</p>
-        </div>
+        <img class="brand__logo" src="/LOGO.png" alt="Axial TechnoCoats India logo" />
+        <span class="brand__name">Axial TechnoCoats India</span>
       </a>
       <nav class="topnav">
         <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
@@ -19,4 +16,37 @@
     </div>
   </header>
   <router-outlet></router-outlet>
+
+  <nav class="section-nav" *ngIf="sections.length > 1" aria-label="Section navigation">
+    <button
+      class="section-nav__arrow"
+      type="button"
+      (click)="scrollBySection(-1)"
+      [disabled]="currentSectionIndex === 0"
+      aria-label="Previous section"
+    >
+      <span class="section-nav__chevron section-nav__chevron--up"></span>
+    </button>
+
+    <div class="section-nav__dots" aria-hidden="true">
+      <button
+        *ngFor="let section of sections; let index = index"
+        class="section-nav__dot"
+        type="button"
+        [class.is-active]="index === currentSectionIndex"
+        (click)="scrollToSection(index)"
+        [attr.aria-label]="'Go to section ' + (index + 1)"
+      ></button>
+    </div>
+
+    <button
+      class="section-nav__arrow"
+      type="button"
+      (click)="scrollBySection(1)"
+      [disabled]="currentSectionIndex === sections.length - 1"
+      aria-label="Next section"
+    >
+      <span class="section-nav__chevron section-nav__chevron--down"></span>
+    </button>
+  </nav>
 </div>

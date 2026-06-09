@@ -15,11 +15,11 @@
 .hero__texture {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(13, 15, 20, 0.88), rgba(12, 13, 16, 0.95)),
-    url('https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=1800&q=80');
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.72), rgba(1, 13, 32, 0.82)),
+    url('/Mumbai Skyline.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.42;
+  opacity: 0.82;
 }
 .hero__content {
   position: relative;
@@ -27,7 +27,7 @@
   max-width: 780px;
 }
 .eyebrow {
-  color: #c7a86a;
+  color: #c7ebe3;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.72rem;
@@ -48,11 +48,11 @@ h2 {
 h3 {
   margin-top: 1.2rem;
   font-size: 1rem;
-  color: #dac7a1;
+  color: #c7ebe3;
 }
 .hero__sub {
   margin-top: 1.2rem;
-  color: #cbc8bf;
+  color: #c7ebe3;
   max-width: 64ch;
 }
 .contact-grid {
@@ -61,9 +61,9 @@ h3 {
   gap: 1rem;
 }
 .panel {
-  background: #191b1f;
-  border: 1px solid #2f3238;
-  border-radius: 0.75rem;
+  background: #010d20;
+  border: 1px solid rgba(5, 105, 93, 0.48);
+  border-radius: 0.5rem;
   padding: 1.2rem;
 }
 .form-grid {
@@ -78,15 +78,15 @@ label {
   gap: 0.35rem;
 }
 label span {
-  color: #c6c3ba;
+  color: #c7ebe3;
   font-size: 0.85rem;
 }
 input,
 textarea {
-  border: 1px solid #3a3d44;
+  border: 1px solid rgba(199, 235, 227, 0.38);
   border-radius: 0.5rem;
-  background: #101114;
-  color: #f3f2ef;
+  background: #000000;
+  color: #ffffff;
   padding: 0.65rem 0.75rem;
   font-family: inherit;
 }
@@ -109,12 +109,12 @@ textarea {
   transform: translateY(-2px);
 }
 .btn--primary {
-  background: linear-gradient(135deg, #c7a86a, #a8894e);
-  color: #141414;
-  box-shadow: 0 8px 24px rgba(199, 168, 106, 0.3);
+  background: #c7ebe3;
+  color: #010d20;
+  box-shadow: 0 8px 24px rgba(5, 105, 93, 0.3);
 }
 .panel p {
-  color: #cbc8bf;
+  color: #c7ebe3;
   margin-top: 0.8rem;
 }
 .map-wrap {
@@ -122,7 +122,7 @@ textarea {
   position: relative;
   border-radius: 0.6rem;
   overflow: hidden;
-  border: 1px solid #3a3d44;
+  border: 1px solid rgba(199, 235, 227, 0.38);
 }
 .map-frame {
   width: 100%;
@@ -137,23 +137,23 @@ textarea {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #c7a86a;
-  border: 2px solid #141414;
+  background: #c7ebe3;
+  border: 2px solid #010d20;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 0 8px rgba(199, 168, 106, 0.2);
+  box-shadow: 0 0 0 8px rgba(199, 235, 227, 0.2);
   pointer-events: none;
 }
 .map-caption {
-  color: #9fa6b1;
+  color: #c7ebe3;
   font-size: 0.85rem;
 }
 .map-placeholder {
   margin-top: 0.8rem;
   min-height: 180px;
-  border: 1px dashed #3a3d44;
+  border: 1px dashed rgba(199, 235, 227, 0.38);
   border-radius: 0.6rem;
-  background: #15181d;
-  color: #9fa6b1;
+  background: #010d20;
+  color: #c7ebe3;
   display: grid;
   place-items: center;
   text-align: center;
