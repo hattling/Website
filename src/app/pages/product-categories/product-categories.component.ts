@@ -1,15 +1,21 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { CATEGORIES } from '../../data/categories.data';
+import { PRODUCTS } from '../../data/products.data';
 import { ApplicationType, Category, IndustryType, SurfaceType } from '../../models/category.model';
 
 @Component({
   selector: 'app-product-categories',
   standalone: true,
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './product-categories.component.html',
   styleUrl: './product-categories.component.scss',
 })
 export class ProductCategoriesComponent {
   readonly categories: Category[] = CATEGORIES;
+  readonly products = PRODUCTS;
   readonly applications: ApplicationType[] = ['Primer', 'Road Safety', 'Industrial Coating'];
   readonly surfaces: SurfaceType[] = ['Metal', 'Concrete', 'Industrial Equipment', 'Mixed'];
   readonly industries: IndustryType[] = ['Construction', 'Infrastructure', 'Road Contractors', 'Industrial Manufacturing', 'Government Projects'];

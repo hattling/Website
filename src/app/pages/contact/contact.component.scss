@@ -113,9 +113,15 @@ textarea {
   color: #010d20;
   box-shadow: 0 8px 24px rgba(5, 105, 93, 0.3);
 }
-.panel p {
+.panel p,
+.panel address {
   color: #c7ebe3;
   margin-top: 0.8rem;
+}
+
+.panel address {
+  font-style: normal;
+  line-height: 1.6;
 }
 .map-wrap {
   margin-top: 0.8rem;

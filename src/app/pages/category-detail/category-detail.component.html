@@ -1,8 +1,95 @@
-<main class="under-development-page">
-  <section class="under-development section">
-    <div class="under-development__content">
-      <h1>Website Under Development</h1>
-      <p>Exciting things are on the way. Our website is currently under development and will be launching soon.</p>
+<main *ngIf="category() as category; else missingCategory">
+  <section class="hero section">
+    <div class="hero__texture" [style.background-image]="'linear-gradient(120deg, rgba(0, 0, 0, 0.78), rgba(1, 13, 32, 0.9)), url(' + category.image + ')'"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">{{ category.application }} / {{ category.surface }}</p>
+      <h1>{{ category.title }} for Industrial Buyers</h1>
+      <p class="hero__sub">{{ category.longDescription }}</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" routerLink="/contact">Request Supply Details</a>
+        <a class="btn btn--secondary" routerLink="/categories">All Categories</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <article class="panel reveal">
+        <p class="eyebrow">Use Cases</p>
+        <h2>Common applications</h2>
+        <ul>
+          <li *ngFor="let useCase of category.useCases">{{ useCase }}</li>
+        </ul>
+      </article>
+      <article class="panel reveal">
+        <p class="eyebrow">Supply Fit</p>
+        <h2>Why this category matters</h2>
+        <ul>
+          <li *ngFor="let highlight of category.highlights">{{ highlight }}</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Related Products</p>
+        <h2>Products in {{ category.title }}</h2>
+      </div>
+      <div class="product-grid" *ngIf="categoryProducts().length; else categoryInquiry">
+        <article class="product-card reveal" *ngFor="let product of categoryProducts()">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.shortDescription }}</p>
+          <a class="text-link" [routerLink]="['/products', product.slug]">View product</a>
+        </article>
+      </div>
+      <ng-template #categoryInquiry>
+        <article class="panel reveal">
+          <h3>Custom category inquiry</h3>
+          <p>
+            This supporting category is available for technical discussion. Contact the team with your surface,
+            application and quantity requirements.
+          </p>
+          <a class="text-link" routerLink="/contact">Contact the team</a>
+        </article>
+      </ng-template>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Explore More</p>
+        <h2>Adjacent industrial paint categories</h2>
+      </div>
+      <div class="related-grid">
+        <article class="product-card reveal" *ngFor="let related of relatedCategories()">
+          <h3>{{ related.title }}</h3>
+          <p>{{ related.description }}</p>
+          <a class="text-link" [routerLink]="['/categories', related.slug]">View category</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="container cta__inner reveal">
+      <h2>Planning a {{ category.title }} purchase?</h2>
+      <p>Share your buyer type, city, monthly requirement and application conditions for a focused B2B response.</p>
+      <a class="btn btn--primary" routerLink="/contact">Request a Quote</a>
     </div>
   </section>
 </main>
+
+<ng-template #missingCategory>
+  <main>
+    <section class="section">
+      <div class="container panel">
+        <h1>Category Not Found</h1>
+        <p>This product category is not available. Browse all industrial paint categories instead.</p>
+        <a class="text-link" routerLink="/categories">View categories</a>
+      </div>
+    </section>
+  </main>
+</ng-template>

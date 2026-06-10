@@ -1,8 +1,57 @@
-<main class="under-development-page">
-  <section class="under-development section">
-    <div class="under-development__content">
-      <h1>Website Under Development</h1>
-      <p>Exciting things are on the way. Our website is currently under development and will be launching soon.</p>
+<main>
+  <section class="hero section">
+    <div class="hero__texture"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">Resources</p>
+      <h1>Industrial Paint Buying Guides and Contractor Resources</h1>
+      <p class="hero__sub">
+        Practical resources for contractors, dealers, distributors and industrial buyers evaluating primers, road
+        marking paint, thinners, turpentine and coating systems.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" routerLink="/contact">Request a Quote</a>
+        <a class="btn btn--secondary" routerLink="/categories">View Products</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Document Library</p>
+        <h2>Helpful references for paint procurement</h2>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card reveal" *ngFor="let group of groups">
+          <h3>{{ group.title }}</h3>
+          <ul>
+            <li *ngFor="let item of group.items">{{ item }}</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Buyer FAQs</p>
+        <h2>Common questions before requesting supply details</h2>
+      </div>
+      <div class="faq-grid">
+        <article class="resource-card reveal" *ngFor="let faq of faqs">
+          <h3>{{ faq.question }}</h3>
+          <p>{{ faq.answer }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="container cta__inner reveal">
+      <h2>Need product-specific guidance?</h2>
+      <p>Send your application, city, quantity and buyer type for a practical recommendation from the team.</p>
+      <a class="btn btn--primary" routerLink="/contact">Contact Axial TechnoCoats India</a>
     </div>
   </section>
 </main>

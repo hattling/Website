@@ -1,28 +1,245 @@
-.under-development {
-  min-height: calc(100svh - var(--topbar-height));
-  width: 100%;
-  background: #ffffff;
-  color: #000000;
-  display: grid;
-  place-items: center;
-  padding: 2rem;
-  text-align: center;
+.container {
+  width: min(1140px, calc(100% - 3rem));
+  margin: 0 auto;
 }
 
-.under-development__content {
-  max-width: 760px;
+.section {
+  padding: 5rem 0;
+}
+
+.section--muted,
+.cta {
+  background: #010d20;
+  border-top: 1px solid rgba(5, 105, 93, 0.45);
+  border-bottom: 1px solid rgba(5, 105, 93, 0.45);
+}
+
+.hero {
+  position: relative;
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__texture {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.86;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 840px;
+}
+
+.eyebrow,
+.hero__sub,
+.panel p,
+.panel li,
+.panel dd,
+.text-link,
+.cta__inner p,
+.tag-grid span {
+  color: #c7ebe3;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  margin: 0 0 1.1rem;
+}
+
+h1,
+h2,
+h3,
+p,
+dl,
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
 }
 
 h1 {
-  margin: 0;
-  color: #000000;
-  font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.1;
+  font-size: clamp(2rem, 4vw, 3.7rem);
 }
 
-p {
-  margin: 1rem 0 0;
-  color: #000000;
-  font-size: clamp(1rem, 2vw, 1.35rem);
+h2 {
+  font-size: clamp(1.35rem, 2.2vw, 2.1rem);
+}
+
+.hero__sub {
+  margin-top: 1.2rem;
   line-height: 1.6;
+  max-width: 68ch;
+}
+
+.hero__actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.split,
+.feature-grid,
+.related-grid,
+.faq-list,
+.tag-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.split {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.related-grid,
+.faq-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.panel {
+  background: #010d20;
+  border: 1px solid rgba(5, 105, 93, 0.48);
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+}
+
+.panel p {
+  margin-top: 0.75rem;
+  line-height: 1.6;
+}
+
+.panel ul {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.panel li {
+  margin: 0.45rem 0;
+}
+
+.section-head {
+  margin-bottom: 2rem;
+}
+
+.spec-list {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.spec-list div {
+  display: grid;
+  grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1.2fr);
+  gap: 0.8rem;
+  border-top: 1px solid rgba(199, 235, 227, 0.18);
+  padding-top: 0.7rem;
+}
+
+.spec-list dt {
+  font-weight: 700;
+}
+
+.tag-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tag-grid span {
+  border: 1px solid rgba(199, 235, 227, 0.35);
+  border-radius: 0.5rem;
+  padding: 0.85rem;
+  background: #010d20;
+  text-align: center;
+}
+
+.text-link {
+  display: inline-flex;
+  margin-top: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.35rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: #c7ebe3;
+  color: #010d20;
+  box-shadow: 0 8px 24px rgba(5, 105, 93, 0.3);
+}
+
+.btn--secondary {
+  border: 1px solid rgba(199, 235, 227, 0.48);
+  background: rgba(1, 13, 32, 0.75);
+  color: #ffffff;
+}
+
+.cta__inner {
+  text-align: center;
+  max-width: 860px;
+}
+
+.cta__inner p {
+  margin: 1rem auto 1.6rem;
+}
+
+.reveal {
+  animation: fadeSlide 850ms ease both;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .feature-grid,
+  .tag-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .split,
+  .feature-grid,
+  .related-grid,
+  .faq-list,
+  .tag-grid,
+  .spec-list div {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: min(1140px, calc(100% - 2rem));
+  }
 }

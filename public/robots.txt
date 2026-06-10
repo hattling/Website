@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://axialtechnocoats.co.in/sitemap.xml

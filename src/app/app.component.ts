@@ -1,7 +1,8 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { AfterViewInit, Component, NgZone, OnDestroy, inject } from '@angular/core';
+import { AfterViewInit, Component, NgZone, OnDestroy, OnInit, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Subscription, filter } from 'rxjs';
+import { SeoService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +11,10 @@ import { Subscription, filter } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements AfterViewInit, OnDestroy {
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   private readonly document = inject(DOCUMENT);
   private readonly router = inject(Router);
+  private readonly seo = inject(SeoService);
   private readonly zone = inject(NgZone);
   private observer?: IntersectionObserver;
   private routerSubscription?: Subscription;
@@ -20,11 +22,18 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   sections: HTMLElement[] = [];
   currentSectionIndex = 0;
 
-  ngAfterViewInit(): void {
-    this.refreshSections();
+  ngOnInit(): void {
+    this.seo.applyForUrl(this.router.url);
     this.routerSubscription = this.router.events
       .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
-      .subscribe(() => this.refreshSections());
+      .subscribe((event) => {
+        this.seo.applyForUrl(event.urlAfterRedirects);
+        this.refreshSections();
+      });
+  }
+
+  ngAfterViewInit(): void {
+    this.refreshSections();
   }
 
   ngOnDestroy(): void {

@@ -1,12 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { GENERAL_FAQS } from '../../data/seo.data';
 
 @Component({
   selector: 'app-resources',
   standalone: true,
+  imports: [CommonModule, RouterLink],
   templateUrl: './resources.component.html',
   styleUrl: './resources.component.scss',
 })
 export class ResourcesComponent {
+  readonly faqs = GENERAL_FAQS;
   readonly groups = [
     {
       title: 'Technical Datasheets',

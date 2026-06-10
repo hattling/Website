@@ -1,8 +1,114 @@
-<main class="under-development-page">
-  <section class="under-development section">
-    <div class="under-development__content">
-      <h1>Website Under Development</h1>
-      <p>Exciting things are on the way. Our website is currently under development and will be launching soon.</p>
+<main>
+  <section class="hero section">
+    <div class="hero__texture"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">Product Categories</p>
+      <h1>Industrial Paint and Coating Products for B2B Buyers</h1>
+      <p class="hero__sub">
+        Explore primers, road marking paint, solvents, thinners and supporting coating categories supplied for
+        contractors, dealers, distributors and industrial buyers.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" routerLink="/contact">Request a Quote</a>
+        <a class="btn btn--secondary" routerLink="/industries">Industries Served</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="metrics reveal" aria-label="Company trust indicators">
+        <article *ngFor="let metric of trustedMetrics">
+          <strong>{{ metric.value }}</strong>
+          <span>{{ metric.label }}</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Browse Categories</p>
+        <h2>Find the right industrial paint category</h2>
+      </div>
+
+      <form class="filter-bar reveal" aria-label="Filter product categories">
+        <label>
+          <span>Application</span>
+          <select name="application" [(ngModel)]="selectedApplication">
+            <option>All</option>
+            <option *ngFor="let application of applications">{{ application }}</option>
+          </select>
+        </label>
+        <label>
+          <span>Surface</span>
+          <select name="surface" [(ngModel)]="selectedSurface">
+            <option>All</option>
+            <option *ngFor="let surface of surfaces">{{ surface }}</option>
+          </select>
+        </label>
+        <label>
+          <span>Industry</span>
+          <select name="industry" [(ngModel)]="selectedIndustry">
+            <option>All</option>
+            <option *ngFor="let industry of industries">{{ industry }}</option>
+          </select>
+        </label>
+        <label>
+          <span>Sort</span>
+          <select name="sort" [(ngModel)]="selectedSort">
+            <option *ngFor="let option of sortOptions">{{ option }}</option>
+          </select>
+        </label>
+        <button class="btn btn--secondary" type="button" (click)="resetFilters()">Reset</button>
+      </form>
+
+      <div class="category-grid">
+        <article class="category-card reveal" *ngFor="let category of visibleCategories">
+          <div class="category-card__image" [style.background-image]="'url(' + category.image + ')'"></div>
+          <div class="category-card__body">
+            <div class="tag-row">
+              <span>{{ category.application }}</span>
+              <span>{{ category.surface }}</span>
+              <span>{{ category.industry }}</span>
+            </div>
+            <h3>{{ category.title }}</h3>
+            <p>{{ category.longDescription }}</p>
+            <ul>
+              <li *ngFor="let highlight of category.highlights">{{ highlight }}</li>
+            </ul>
+            <a class="text-link" [routerLink]="['/categories', category.slug]">View category</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--muted">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Priority Products</p>
+        <h2>Factory-direct industrial paint supply</h2>
+      </div>
+      <div class="product-grid">
+        <article class="product-card reveal" *ngFor="let product of products">
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.shortDescription }}</p>
+          <div class="tag-row">
+            <span *ngFor="let application of product.applications.slice(0, 2)">{{ application }}</span>
+          </div>
+          <a class="text-link" [routerLink]="['/products', product.slug]">View product</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta section">
+    <div class="container cta__inner reveal">
+      <h2>Need help selecting a product?</h2>
+      <p>Share your quantity, buyer type, location and application so the team can recommend the right supply path.</p>
+      <a class="btn btn--primary" routerLink="/contact">Contact Axial TechnoCoats India</a>
     </div>
   </section>
 </main>
